@@ -1,0 +1,191 @@
+{
+  "rover-concept": {
+    "source": "content/Ongoing Projects/Senior Capstone Design Project/System Requirements Review Presentation.pptx",
+    "archive_member": "ppt/media/image9.png"
+  },
+  "rover-mission": {
+    "source": "content/Ongoing Projects/Senior Capstone Design Project/System Requirements Review Presentation.pptx",
+    "archive_member": "ppt/media/image1.png"
+  },
+  "rover-options": {
+    "source": "content/Ongoing Projects/Senior Capstone Design Project/System Requirements Review Presentation.pptx",
+    "archive_member": "ppt/media/image11.png"
+  },
+  "fan": {
+    "source": "content/Completed Projects/Mechanical Design - Fan Project/Isometric View of Fan project CAD.png",
+    "size": [
+      551,
+      625
+    ]
+  },
+  "fan-gears": {
+    "source": "content/Completed Projects/Mechanical Design - Fan Project/Fan Project - Gear Train CAD assem.png",
+    "size": [
+      505,
+      475
+    ]
+  },
+  "fan-shaft": {
+    "source": "content/Completed Projects/Mechanical Design - Fan Project/Fan Project- Fan Shaft Worm Gear.png",
+    "size": [
+      673,
+      518
+    ]
+  },
+  "fan-fea": {
+    "source": "content/Completed Projects/Mechanical Design - Fan Project/Final Report.docx",
+    "archive_member": "word/media/image60.png"
+  },
+  "grabber": {
+    "source": "content/Completed Projects/Manufacturing Processes and Design - Grabber Project/Manufacturing Processes and Design - Grabber Project Report.docx",
+    "archive_member": "word/media/image21.jpg"
+  },
+  "grabber-machining": {
+    "source": "content/Completed Projects/Manufacturing Processes and Design - Grabber Project/Manufacturing Processes and Design - Grabber Project Report.docx",
+    "archive_member": "word/media/image17.jpg"
+  },
+  "grabber-fixture": {
+    "source": "content/Completed Projects/Manufacturing Processes and Design - Grabber Project/Manufacturing Processes and Design - Grabber Project Report.docx",
+    "archive_member": "word/media/image11.png"
+  },
+  "grabber-cad": {
+    "source": "content/Completed Projects/Manufacturing Processes and Design - Grabber Project/Manufacturing Processes and Design - Grabber Project Report.docx",
+    "archive_member": "word/media/image6.png"
+  },
+  "food": {
+    "source": "content/Completed Projects/Food Flow and Photography/Final Photo.jpg",
+    "size": [
+      1600,
+      1067
+    ]
+  },
+  "food-exhibition": {
+    "source": "content/Completed Projects/Food Flow and Photography/Project Showcase Photo1.jpg",
+    "size": [
+      1600,
+      1067
+    ]
+  },
+  "food-setup": {
+    "source": "content/Completed Projects/Food Flow and Photography/Food Flow and Photography - Fluid Mechanics of Hollandaise Sauce.docx",
+    "archive_member": "word/media/image4.jpg"
+  },
+  "tap": {
+    "source": "content/Personal Projects/Tap Mount/Tap Mount Version 2 bottom.png",
+    "size": [
+      1256,
+      1036
+    ]
+  },
+  "tap-v1": {
+    "source": "content/Personal Projects/Tap Mount/Tap Mount Version 1.png",
+    "size": [
+      894,
+      1044
+    ]
+  },
+  "tap-v2": {
+    "source": "content/Personal Projects/Tap Mount/Tap Mount Version 2 top.png",
+    "size": [
+      1402,
+      1276
+    ]
+  },
+  "heat-sink": {
+    "source": "content/Completed Projects/Thermal System Design/Thermal Systems Design - Heat Sink Project.docx",
+    "archive_member": "word/media/image9.png"
+  },
+  "heat-analysis": {
+    "source": "content/Completed Projects/Thermal System Design/Thermal Systems Design - Heat Sink Project.docx",
+    "archive_member": "word/media/image6.png"
+  },
+  "electric-field": {
+    "source": "content/Completed Projects/Physics II Lab/Physics II - Electric Field and Potential Lab.docx",
+    "archive_member": "word/media/image8.png"
+  },
+  "electric-plot": {
+    "source": "content/Completed Projects/Physics II Lab/Physics II - Electric Field and Potential Lab.docx",
+    "archive_member": "word/media/image1.png"
+  },
+  "prosthetic-reference": {
+    "source": "content/Ongoing Projects/Advanced Mechanical Engineering Design - Prosthetic Leg/Sample 7 bar linkeage for knee joint.png",
+    "size": [
+      604,
+      374
+    ]
+  },
+  "rover": {
+    "source": "content/Ongoing Projects/Senior Capstone Design Project/System Requirements Review Presentation.pptx",
+    "archive_member": "ppt/media/image10.png"
+  },
+  "sailboat": {
+    "source": "content/Personal Projects/Sailboat Engine Drive Belt/IMG_5305.HEIC"
+  },
+  "tensile": {
+    "source": "content/Completed Projects/Solid Mechanics/Solid Mechanics - Tensile Testing Lab Report.pdf",
+    "page": 5
+  },
+  "tap-installed": {
+    "source": "content/Personal Projects/Tap Mount/Completed set up with new part installed.HEIC",
+    "size": [
+      1200,
+      1600
+    ]
+  },
+  "tap-printed": {
+    "source": "content/Personal Projects/Tap Mount/New Part Completed 3d print.HEIC",
+    "size": [
+      1200,
+      1600
+    ]
+  },
+  "tap-stem-fit": {
+    "source": "content/Personal Projects/Tap Mount/New part installed on the tap stem.HEIC",
+    "size": [
+      1200,
+      1600
+    ]
+  },
+  "tap-comparison": {
+    "source": "content/Personal Projects/Tap Mount/New part next to old part.HEIC",
+    "size": [
+      1200,
+      1600
+    ]
+  },
+  "tap-before": {
+    "source": "content/Personal Projects/Tap Mount/Original duct tape fix.HEIC",
+    "size": [
+      1200,
+      1600
+    ]
+  },
+  "food-showcase-2": {
+    "source": "content/Completed Projects/Food Flow and Photography/Project Showcase Photo2.jpg",
+    "size": [
+      1600,
+      1067
+    ]
+  },
+  "sailboat-belt-closeup": {
+    "source": "content/Personal Projects/Sailboat Engine Drive Belt/IMG_5307.HEIC",
+    "size": [
+      1200,
+      1600
+    ]
+  },
+  "rover-card-cover": {
+    "source": "content/ongoing projects/Senior Capstone Design Project/CoverPicture.png",
+    "size": [
+      742,
+      606
+    ]
+  },
+  "fan-drawing": {
+    "source": "content/Completed Projects/Mechanical Design - Fan Project/drawing.png",
+    "size": [
+      889,
+      696
+    ]
+  }
+}
