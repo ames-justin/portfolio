@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
+*{box-sizing:border-box}
+html,body,#root{margin:0;width:1200px;height:630px;overflow:hidden}
+.sharing-artwork{position:relative;width:1200px;height:630px;border:18px solid #c0b79f;background:radial-gradient(ellipse at 52% 62%,#3d5143 0,#202925 73%);color:#eee8d5;font-family:'DM Sans',sans-serif;box-shadow:inset 0 0 0 3px #101a14}
+.sharing-artwork header{position:absolute;top:35px;left:48px;right:48px;display:flex;align-items:center;gap:18px;font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:3px;color:#d2d4c3}
+.sharing-artwork h1{position:absolute;top:99px;left:48px;right:40px;margin:0;font-size:46px;line-height:1.2;letter-spacing:-1.7px;font-weight:700;color:#ffc15a;z-index:1}
+.sharing-artwork h1 span{font-weight:500;color:#eee8d5}
+.sharing-engine{position:absolute;left:10px;right:10px;top:143px;bottom:49px;pointer-events:none}
+.sharing-artwork footer{position:absolute;left:48px;right:48px;bottom:25px;padding-top:17px;border-top:1px solid #79837465;display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:1.5px;color:#d2d4c3}
+.sharing-artwork footer span:first-child{color:#ffc15a}
