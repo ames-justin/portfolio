@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.work/
+*.tsbuildinfo
+.DS_Store
+.env
+.env.*
+!.env.example
+content/
+*-preview.png
+.pnpm-store/
