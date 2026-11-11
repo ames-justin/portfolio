@@ -1,6 +1,7 @@
 export type Project = {
   stage?: 'early';
   story?: string[];
+  inquiryTag: string; inquirySubject: string;
   id: string; title: string; category: string; status: string; description: string;
   image: string; caption: string; role: string; tools: string[];
   cardImage?: { src: string; alt: string };
@@ -9,7 +10,7 @@ export type Project = {
 }
 export const projects: Project[] = [
   {
-    id: 'mars-rover', stage: 'early', title: 'Mars Rover Challenge', category: 'Senior capstone design', status: 'Ongoing · early design · 2026–27',
+    id: 'mars-rover', inquiryTag: 'capstone', inquirySubject: 'Capstone project inquiry', stage: 'early', title: 'Mars Rover Challenge', category: 'Senior capstone design', status: 'Ongoing · early design · 2026–27',
     description: 'Our four-person team is developing a rocket, payload container, and rover for the GW Rocket team’s entry in the Battle of the Rockets Mars Rover Challenge. The project is in progress, with updates on the way.',
     cardImage: { src: '/assets/rover-card-cover.png', alt: 'Illustration of a rocket, rover, astronaut, and satellite on Mars.' },
     image: 'rover-mission', caption: 'Planned mission sequence from our team’s concept-of-operations (CONOPS) graphic, presented at the System Requirements Review.',
@@ -25,7 +26,7 @@ export const projects: Project[] = [
 
   },
   {
-    id: 'oscillating-fan', title: 'Oscillating Fan Design', category: 'Mechanical design', status: 'Completed coursework',
+    id: 'oscillating-fan', inquiryTag: 'fan', inquirySubject: 'Fan project inquiry', title: 'Oscillating Fan Design', category: 'Mechanical design', status: 'Completed coursework',
     description: 'A semester-long team project to develop design plans for a desktop oscillating fan. I led the SolidWorks assembly and gear-train design, then used motion studies and FEA to support our engineering analysis.',
     image: 'fan', caption: 'The complete oscillating fan assembly in SolidWorks, integrating the team’s component designs.',
     role: 'I was responsible for the overall SolidWorks assembly, CAD design of the gear train, and motion studies and motion analysis of the assembly and gear train. I brought together parts created by different team members and conducted FEA on the assembly and individual components to support our analytical findings. I also conducted fatigue failure analysis on the shaft connecting the gear train to the oscillation linkage.',
@@ -40,7 +41,7 @@ export const projects: Project[] = [
 
   },
   {
-    id: 'grabber', title: 'Mechanical Grabber', category: 'Manufacturing', status: 'Completed · Fall 2024',
+    id: 'grabber', inquiryTag: 'grabber', inquirySubject: 'Grabber project inquiry', title: 'Mechanical Grabber', category: 'Manufacturing', status: 'Completed · Fall 2024',
     description: 'An aluminum grabber, taken through process planning, machining, fitting, and assembly with a four-person team.',
     image: 'grabber', caption: 'Our assembled aluminum grabber.',
     role: 'I led and organized our four-student team, designed the shaft and handle-housing backings in CAD, and shared the machining work. I also presented the claw NC program and manufacturing process.',
@@ -54,7 +55,7 @@ export const projects: Project[] = [
     source: 'Manufacturing Processes and Design — Grabber Project Report and Presentation; Resume.md.'
   },
   {
-    id: 'food-flow', title: 'A little fluid mechanics. A better brunch.', category: 'Experiment & photography', status: 'Completed · Fall 2025',
+    id: 'food-flow', inquiryTag: 'hollandaise', inquirySubject: 'Hollandaise project inquiry', title: 'A little fluid mechanics. A better brunch.', category: 'Experiment & photography', status: 'Completed · Fall 2025',
     description: 'Three butter temperatures. Three very different sauces. An experiment in emulsions, observation, and visual storytelling.',
     image: 'food', caption: 'My final photograph: Hollandaise made with butter at 27°C, 50°C, and 85°C, left to right.',
     role: 'Individual project. I designed the experiment, prepared the sauces, photographed their flow, edited the images, and composed the exhibition poster.',
@@ -68,7 +69,7 @@ export const projects: Project[] = [
     source: 'Food Flow and Photography — Fluid Mechanics of Hollandaise Sauce; Final Photo Description; supplied photographs.'
   },
   {
-    id: 'tap-mount', title: 'Duct tape had a good run.', category: 'Personal project', status: 'Completed',
+    id: 'tap-mount', inquiryTag: 'tap-mount', inquirySubject: 'Tap mount project inquiry', title: 'Duct tape had a good run.', category: 'Personal project', status: 'Completed',
     description: 'A custom kegerator tap mount, reverse engineered from the original part, modeled in SolidWorks, and 3D printed. The new mount fitted successfully and replaced the temporary duct-tape fix.',
     image: 'tap-comparison', caption: 'My blue 3D-printed replacement beside the original black mount. The wider flange adapts the mounting interface while retaining the hollow center and locating tabs.',
     role: 'I reverse engineered the existing mount, developed the replacement in SolidWorks, worked through design iterations, and 3D printed and installed the finished part.',
@@ -90,7 +91,7 @@ export const projects: Project[] = [
 
   },
   {
-    id: 'sailboat-belt', title: 'Engineering at sea', category: 'Personal project', status: 'Personal project',
+    id: 'sailboat-belt', inquiryTag: 'sailboat', inquirySubject: 'Sailboat story inquiry', title: 'Engineering at sea', category: 'Personal project', status: 'Personal project',
     description: 'A tape measure left in the engine bay interrupted our Father’s Day boat trip. We worked with the tools on board and made it back to shore.',
     image: 'sailboat', caption: 'The engine bay, with the forgotten tape measure beside the drive belt.',
     story: [
@@ -103,7 +104,7 @@ export const projects: Project[] = [
     source: 'Personal Projects / Sailboat Engine Drive Belt / sailboat engine belt description.md and supplied HEIC photographs.'
   },
   {
-    id: 'prosthetic-leg', stage: 'early', title: 'Prosthetic Leg Design', category: 'Advanced mechanical design', status: 'In progress',
+    id: 'prosthetic-leg', inquiryTag: 'prosthetic', inquirySubject: 'Prosthetic project inquiry', stage: 'early', title: 'Prosthetic Leg Design', category: 'Advanced mechanical design', status: 'In progress',
     description: 'An ongoing coursework project to design an above-knee prosthetic leg in SolidWorks, with a planned seven-bar knee linkage and analysis of each component. Design updates are on the way.',
     image: 'prosthetic-reference', caption: 'Reference for a seven-bar knee linkage, based on the Össur TOTAL KNEE 2000. Reference image, not my design.',
     role: 'I plan to develop the prosthetic leg in SolidWorks, incorporating a seven-bar knee linkage based on the Össur TOTAL KNEE 2000, and analyze each component to assess whether the design can meet the project requirements.',
@@ -116,7 +117,7 @@ export const projects: Project[] = [
     gallery: [], source: 'Advanced Mechanical Engineering Design — Prosthetic Leg / project description and sample seven-bar linkage image.'
   },
   {
-    id: 'heat-sink', title: 'Finding a path for 650 watts.', category: 'Thermal systems', status: 'Completed coursework',
+    id: 'heat-sink', inquiryTag: 'heat-sink', inquirySubject: 'Heat sink project inquiry', title: 'Finding a path for 650 watts.', category: 'Thermal systems', status: 'Completed coursework',
     description: 'Comparing fin geometries and materials for the cooling of an enclosed data-acquisition system.',
     image: 'heat-sink', caption: 'Our team’s sketches of the rectangular-fin concept.',
     role: 'Three-person team. I developed and thermally analyzed Concept 3 (diamond rectangular fins), performed comparative analysis, and took meeting notes. Another team member developed the selected brass-fin design.',
@@ -130,7 +131,7 @@ export const projects: Project[] = [
     source: 'Thermal Systems Design — Heat Sink Project, particularly “Team member contributions” and final design selection.'
   },
   {
-    id: 'tensile-testing', title: 'What happens before a material breaks?', category: 'Solid mechanics', status: 'Completed lab',
+    id: 'tensile-testing', inquiryTag: 'tensile', inquirySubject: 'Tensile testing inquiry', title: 'What happens before a material breaks?', category: 'Solid mechanics', status: 'Completed lab',
     description: 'A laboratory investigation of material response under tensile loading.',
     image: 'tensile', caption: 'Results from our tensile-testing lab.',
     role: 'On our four-person lab team, I wrote the yield-strength discussion and contributed to the interpretation of elastic modulus, ultimate strength, ductility, and reduction of area versus elongation. I also prepared the appendix and helped format our findings.',
@@ -143,7 +144,7 @@ export const projects: Project[] = [
     gallery: [], source: 'Solid Mechanics — Tensile Testing Lab Report.pdf.'
   },
   {
-    id: 'electric-fields', title: 'Making invisible fields visible.', category: 'Physics II', status: 'Completed lab',
+    id: 'electric-fields', inquiryTag: 'e-fields', inquirySubject: 'Electric fields project inquiry', title: 'Making invisible fields visible.', category: 'Physics II', status: 'Completed lab',
     description: 'Using charge simulations and measurements to connect electric fields, potential, and superposition.',
     image: 'electric-field', caption: 'Charge-distribution simulation from my electric-field study.',
     role: 'I completed the simulation measurements, calculations, plots, and interpretation for this individual lab project.',

@@ -7,6 +7,7 @@ import { useProjectReveals } from './components/useProjectReveals'
 const publicPath=(path:string)=>import.meta.env.BASE_URL+path.replace(/^\/+/, '')
 const imagePath=(name:string)=>publicPath('assets/'+name+'.webp')
 const projectImagePath=(path:string)=>publicPath(path)
+const emailHref=(tag:string,subject:string)=>`mailto:amesjj1234+p-${tag}@gmail.com?subject=${encodeURIComponent(subject)}`
 function ProjectLink({project, index}:{project:Project;index:number}){
   return <a className="project-card interactive-card" data-reveal={index%2?'left':'right'} href={'#project/'+project.id} aria-label={'View project: '+project.title}>
     <span className={'project-image image-'+project.id}>
@@ -58,7 +59,7 @@ function CaseStudy({project,onClose}:{project:Project;onClose:()=>void}){
       {project.story ? <article className="story-body">{project.story.map((paragraph,index)=><p key={index}>{paragraph}</p>)}</article> : <>
       <div className="case-role"><p className="mono">{early?'MY PLANNED ROLE':'MY CONTRIBUTION'}</p><p>{project.role}</p></div>
       <div className="case-body">
-        <aside><p className="mono">{early?'PROJECT FOCUS':'TOOLS & METHODS'}</p><ul>{project.tools.map(t=><li key={t}>{t}</li>)}</ul><a className="text-link" href="mailto:amesjj1234@gmail.com">Let’s talk about it ↗</a></aside>
+        <aside><p className="mono">{early?'PROJECT FOCUS':'TOOLS & METHODS'}</p><ul>{project.tools.map(t=><li key={t}>{t}</li>)}</ul><a className="text-link" href={emailHref(project.inquiryTag,project.inquirySubject)}>Let’s talk about it ↗</a></aside>
         <div className="case-sections">{sections.map(([title,text],index)=><section key={title}><span className="mono">{String(index+1).padStart(2,'0')}</span><div><h3>{title}</h3><p>{text}</p></div></section>)}</div>
       </div>
       </>}
@@ -114,7 +115,7 @@ export default function App(){
             <p>I am eager to grow my engineering knowledge and contribute to real-world projects that make an impact. My interests span manufacturing, mechanics, product design, and energy systems.</p>
             <p>Aside from my knowledge in mechanical engineering, I am hardworking and a quick learner. Throughout high school and during the summers since graduating from high school, I have worked and volunteered in landscaping, hospitals, kitchens, restaurants, and handcrafted woodworking. No matter what I find myself doing, I excel, proving to be a valuable teammate and employee.</p>
             <p>In the machine shop, on a team, or solving an everyday problem in my life, I enjoy bringing technical thinking and creativity to the table.</p>
-            <a className="text-link" href="mailto:amesjj1234@gmail.com">Let’s connect <span>↗</span></a>
+            <a className="text-link" href={emailHref('about','Portfolio inquiry')}>Let’s connect <span>↗</span></a>
           </div>
         </div>
         <div className="skills"><div><span className="mono">DESIGN & ANALYSIS</span><p>SolidWorks · AutoCAD · MATLAB<br/>Python · Excel</p></div><div><span className="mono">BUILD & ITERATE</span><p>Machining · 3D printing<br/>Process planning · Tolerancing</p></div><div><span className="mono">WORK TOGETHER</span><p>Team leadership · CAD assemblies<br/>Engineering experimentation</p></div></div>
@@ -125,7 +126,7 @@ export default function App(){
         <article><span className="mono">2021 — 2025</span><h3>Bluewater Bar and Grill</h3><p className="position">Dishwasher → Cook → Expo / Server</p><p>Promoted three times. Coordinated orders and timing with line cooks in a busy restaurant.</p></article>
         <article><span className="mono">SEP 2024 — PRESENT</span><h3>Kappa Sigma at GW</h3><p className="position">Philanthropy Chair & Scribe</p><p>Organize philanthropy events and maintain membership, event, and chapter records.</p></article>
       </div></section>
-      <section id="contact" className="contact section-shell"><p className="eyebrow"><span className="status-dot"/> LET’S BUILD SOMETHING THAT MATTERS</p><div className="contact-main"><h2>Have a challenge<br/><em>in mind?</em></h2><a href="mailto:amesjj1234@gmail.com" className="contact-arrow" aria-label="Email Justin Ames">↗</a></div><div className="contact-links"><a href="mailto:amesjj1234@gmail.com">amesjj1234@gmail.com ↗</a><a href="https://www.linkedin.com/in/ames-justin" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="tel:+14017146155">401 714 6155 ↗</a><a href={publicPath('Justin-Ames-Resume.pdf')} download>Download résumé ↓</a></div></section>
+      <section id="contact" className="contact section-shell"><p className="eyebrow"><span className="status-dot"/> LET’S BUILD SOMETHING THAT MATTERS</p><div className="contact-main"><h2>Have a challenge<br/><em>in mind?</em></h2><a href={emailHref('contact','Portfolio inquiry')} className="contact-arrow" aria-label="Email Justin Ames">↗</a></div><div className="contact-links"><a href={emailHref('contact','Portfolio inquiry')}>amesjj1234@gmail.com ↗</a><a href="https://www.linkedin.com/in/ames-justin" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="tel:+14017146155">401 714 6155 ↗</a><a href={publicPath('Justin-Ames-Resume.pdf')} download>Download résumé ↓</a></div></section>
     </main>
     <footer><span>© {new Date().getFullYear()} Justin Ames</span><span className="mono">MECHANICS + MANUFACTURING + DESIGN WITH INTENT</span><a href="#top">Back to top ↑</a></footer>
     {selected && <CaseStudy key={selected.id} project={selected} onClose={closeStudy}/>}
