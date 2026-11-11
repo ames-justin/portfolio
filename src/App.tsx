@@ -127,7 +127,7 @@ export default function App(){
       </div></section>
       <section id="contact" className="contact section-shell"><p className="eyebrow"><span className="status-dot"/> LET’S BUILD SOMETHING THAT MATTERS</p><div className="contact-main"><h2>Have a challenge<br/><em>in mind?</em></h2><a href="mailto:amesjj1234@gmail.com" className="contact-arrow" aria-label="Email Justin Ames">↗</a></div><div className="contact-links"><a href="mailto:amesjj1234@gmail.com">amesjj1234@gmail.com ↗</a><a href="https://www.linkedin.com/in/ames-justin" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="tel:+14017146155">401 714 6155 ↗</a><a href={publicPath('Justin-Ames-Resume.pdf')} download>Download résumé ↓</a></div></section>
     </main>
-    <footer><span>© {new Date().getFullYear()} Justin Ames</span><span className="mono">THOUGHTFULLY DESIGNED. ALWAYS ITERATING.</span><a href="#top">Back to top ↑</a></footer>
+    <footer><span>© {new Date().getFullYear()} Justin Ames</span><span className="mono">MECHANICS + MANUFACTURING + DESIGN WITH INTENT</span><a href="#top">Back to top ↑</a></footer>
     {selected && <CaseStudy key={selected.id} project={selected} onClose={closeStudy}/>}
   </>
 }
