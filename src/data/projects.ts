@@ -90,7 +90,7 @@ export const projects: Project[] = [
 
   },
   {
-    id: 'sailboat-belt', title: 'A belt repair on the water', category: 'Personal project', status: 'Personal project',
+    id: 'sailboat-belt', title: 'Engineering at sea', category: 'Personal project', status: 'Personal project',
     description: 'A tape measure left in the engine bay interrupted our Father’s Day boat trip. We worked with the tools on board and made it back to shore.',
     image: 'sailboat', caption: 'The engine bay, with the forgotten tape measure beside the drive belt.',
     story: [
